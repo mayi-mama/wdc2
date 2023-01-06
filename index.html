@@ -292,13 +292,102 @@
                         </h3>
                     </div>
                     <div class="register__body">
-
+                        <div class="register__form">
+                            <form class="form">
+                                <!--ocupation-->
+                                <div class="form__item">
+                                    <div class="form__title">
+                                        ご職業
+                                        <span class="form__require">*必須</span>
+                                    </div>
+                                    <span class="form__radio">
+                                        <input type="radio" id="type01" name="type" value="会社員" checked>
+                                        <label for="type01">会社員</label>
+                                    </span>
+                                    <span class="form__radio">
+                                        <input type="radio" id="type02" name="type" value="個人事業主" checked>
+                                        <label for="type02">個人事業主</label>
+                                    </span>
+                                    <span class="form__radio">
+                                        <input type="radio" id="type03" name="type" value="求職中" checked>
+                                        <label for="type03">求職中</label>
+                                    </span>
+                                    <span class="form__radio">
+                                        <input type="radio" id="type04" name="type" value="その他" checked>
+                                        <label for="type04">その他</label>
+                                    </span>
+                                </div>
+                                <!--name-->
+                                <div class="form__item">
+                                    <label class="form__title" for="name">
+                                        お名前
+                                        <span class="form__require">*必須</span>
+                                    </label>
+                                    <input type="text" id="name" name="name" required class="form__input">
+                                </div>
+                                <!--mail-->
+                                <div class="form__item">
+                                    <label class="form__title" for="email">
+                                        メールアドレス
+                                        <span class="form__require">*必須</span>
+                                        <input type="email" id="email" name="email" required class="form__input">
+                                    </label>
+                                </div>
+                                <!--telephone-->
+                                <div class="form__item">
+                                    <label class="form__title" for="tel">
+                                        電話番号
+                                        <span class="form__note">(半角数字ハイフンなし)</span>
+                                        <input type="tel" name="tel" id="tel" class="form__input">
+                                    </label>
+                                </div>
+                                <!--question-->
+                                <div class="form__item">
+                                    <label for="comment" class="form__title">
+                                        スピーカーに質問したいこと
+                                    </label>
+                                    <textArea name="comment" id="comment" placeholder="ご自由にお書きください" class="form__textArea"></textArea>
+                                </div>
+                                <!--question2-->
+                                <div class="form__item">
+                                    <label for="job" class="form__title">
+                                        WDCをどちらでお知りになりましたか?
+                                        <span class="form__require">*必須</span>
+                                    </label>
+                                    <select id="job" name="job" required class="form__select">
+                                        <option value>選択してください</option>
+                                        <option value="Google/Yahoo検索">Google/Yahoo検索</option>
+                                        <option value="SNS">SNS</option>
+                                        <option value="ブログ">ブログ</option>
+                                        <option value="友人や知人">友人や知人</option>
+                                        <option value="その他">その他</option>
+                                    </select>
+                                </div>
+                                <!--btn-->
+                                <div class="form__btn">
+                                    <button type="submitt" class="btn">送信する</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
-
+        <!--footer-->
+        <footer class="footer">
+            <div class="footer__copyright">©2030 Web Design Conference</div>
+        </footer>
+        <!--pagetop-->
+        <div class="page-top">
+            <a class="page-top__link">
+                <span class="material-symbols-outlined">
+                    keyboard_arrow_up
+                </span>
+            </a>
+        </div>
     </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>    
+<!--jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
