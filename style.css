@@ -1,1 +1,17 @@
 @charset "utf-8";
+
+/*color*/
+:root{
+    --bg-color: #141414;
+    --main-color:#D136D1;
+    --text-color:#FFFFFF;
+    --bg-gradient:linear-gradient(
+        135deg,
+        #0E002E 0%,
+        #1E092B 23%,
+        #320C65 49%,
+        #A01B7C 80%,
+        #C21780 100%
+    );
+}
+
