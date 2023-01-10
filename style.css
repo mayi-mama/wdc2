@@ -15,3 +15,301 @@
     );
 }
 
+/*全体*/
+
+body {
+    font-family: "Montserrat", "Noto Sans JP", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    font-feature-settings: "palt";
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.pc {
+    display: block;
+}
+
+.sp{
+    display:none;
+}
+
+/*レイアウト*/
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.section{
+    padding: 110px 0;
+}
+
+.section__heading{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*ボタン*/
+
+.btn {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    font-size: 18px;
+    font-weight: bold;
+    color:#FFFFFF;
+    line-height: 1.3;
+    letter-spacing: 0.05em;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 auto;
+    transition: all 0.3s;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #BA2073 0%,  #664BBF 100%);
+    box-shadow: 0 10px 0 #DD118E;
+}
+
+.btn:hover{
+    transform: translateY(4px);
+    box-shadow: 0 6px 0 #DD118E;
+}
+
+.btn--sm{
+    width: 230px;
+    font-size: 18px;
+}
+
+/*見出し*/
+.heading01{
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 1.8;
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+
+.heading01__subtitle{
+    display:block;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #FFFFFF;
+}
+
+/*テーブル*/
+
+/*テーブル1*/
+
+.table-type01{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table-type01 th,
+.table-type01 td {
+    text-align: left;
+    padding: 5px 0;
+}
+
+/*テーブル2*/
+.table-type02{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table-type02 tr{
+    border-bottom: solid 1px #740174;
+}
+
+.table-type02 th,
+.table-type02 td{
+    text-align: left;
+    padding: 40px 30px;
+}
+
+.table-type02 th {
+    width: 300px;
+}
+
+.table-type02 td > p{
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/*ヘッダー*/
+.header{
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    padding: 30px;
+}
+
+.header__logo{
+    color: var(--main-color);
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.3;
+    letter-spacing: 0.05em;
+}
+
+/*グローバルリンク*/
+.gnav__list{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.gnav__item{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.gnav__link{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+/*メインビジュアル*/
+.mv{
+    background: var(--bg-gradient);
+}
+
+.mv__inner{
+    display: flex;
+    position:relative;
+    align-items: center;
+    max-width: 1240px;
+    height: 700px;
+    margin: 0 auto;
+    padding: 0 50px;
+    background-image: url(img/mv.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 560px 737px;
+}
+
+.mv__textArea{
+    position: relative;
+    color:#FFFFFF;
+}
+
+.mv__textArea::after{
+    display:block;
+    content:"";
+    position: absolute;
+    right: 40px;
+    bottom: 60px;
+    width:326px;
+    height: 68px;
+    translate: rotate(-13deg);
+    background-image: url(img/teiji-de-kaerumon.svg);
+    background-color: contain;
+}
+
+.mv__subtitle{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    color: var(--main-color);
+    margin-bottom: 0.8em;
+}
+
+.mv__title{
+    font-size: clamp(24px, 10vw, 100px);
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.mv__date{
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0.07em;
+}
+
+.mv__btn{
+    margin-top: 2em;
+}
+
+.mv__speaker-name{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 21px;
+    line-height: 1;
+    color:#FFFFFF;
+}
+
+.mv__speaker-name-small{
+    font-size: 0.8em;
+}
+
+.mv__speaker-name-label{
+    font-size: 14px;
+}
+
+/*ABOUT*/
+.about__body{
+    display: flex;
+    align-items: center;
+    column-gap: 70px;
+}
+
+.about__img-wrapper{
+    flex: 0 1 40%;
+}
+
+.about__desc{
+    flex: 1;
+}
+
+.about__subtitle{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about__title{
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+    color: var(--main-color);
+}
+
+.about__info{
+    font-size: 18px;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    margin-bottom: 25px;
+}
+
+.about__btn{
+    margin-top: 20px;
+}
+
+/*speaker*/
+
