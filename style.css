@@ -45,6 +45,7 @@ img {
 
 .container{
     max-width: 1170px;
+    width: calc(100% - 30px - 30px);
     margin: 0 auto;
     padding: 0 30px;
 }
@@ -158,6 +159,7 @@ img {
     width: 100%;
     height: 70px;
     padding: 30px;
+    width: calc(100% - 30px - 30px);
 }
 
 .header__logo{
@@ -207,6 +209,7 @@ img {
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 560px 737px;
+    width: calc(100% - 30px - 30px);
 }
 
 .mv__textArea{
@@ -498,4 +501,169 @@ img {
 
 .page-top__icon{
     font-size: 40px;
+}
+
+/*レスポンシブデザイン*/
+@media screen and (max-width: 767px){
+    /*全体*/
+    body {
+        font-size: 15px;
+    }
+
+    .pc {
+        display: block;
+    }
+    
+    .sp{
+        display:none;
+    }
+
+    /*レイアウト*/
+    .container{
+       width: calc(100% - 20px - 20px);
+       padding: 0 20px;
+    }
+
+    .section{
+       padding: 50px 0;
+    }
+
+    .section__heading{
+      margin-bottom: 20px;
+    }
+
+    /*ボタン*/
+
+    .btn {
+      width: 180px;
+      font-size: 16px;
+      padding: 20px 0;
+      box-shadow: 0 5px 0 #DD118E;
+    }
+
+    /*見出し*/
+    .heading01{
+       font-size: 45px;
+    }
+
+    .heading01__subtitle{
+       font-size: 20px;
+       margin-top: 5px;
+    }
+
+    /*テーブル*/
+
+    /*テーブル2*/
+    .table-type02 th,
+    .table-type02 td{
+       padding: 20px 0px;
+    }
+
+    .table-type02 th {
+       width: 100px;
+    }
+
+    .table-type02 td > p{
+       font-size: 13px;
+    }
+
+    /*ヘッダー*/
+    .header{
+       height: 60px;
+       padding: 20px;
+       width: calc(100% - 20px - 20px);
+    }
+
+    .header__logo{
+       width:110px;
+    }
+    
+    /*グローバルリンク*/
+    .gnav__list{
+       column-gap: 15px;
+    }
+
+    .gnav__item{
+       font-size: 14px;
+    }
+
+    .gnav__link {
+        color: #fff;
+    }
+
+    .gnav__link:hover {
+        color: #fff;
+    }
+
+    /*メインビジュアル*/
+    .mv__inner{
+        height: 450px;
+        padding: 0 20px;
+        background-position: right bottom;
+        background-size: contain;
+        width: calc(100% - 20px - 20px);
+    }
+
+.mv__textArea{
+    position: relative;
+    color:#FFFFFF;
+}
+
+.mv__textArea::after{
+    display:block;
+    content:"";
+    position: absolute;
+    right: 40px;
+    bottom: 60px;
+    width:326px;
+    height: 68px;
+    translate: rotate(-13deg);
+    background-image: url(img/teiji-de-kaerumon.svg);
+    background-color: contain;
+}
+
+.mv__subtitle{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    color: var(--main-color);
+    margin-bottom: 0.8em;
+}
+
+.mv__title{
+    font-size: clamp(24px, 10vw, 100px);
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.mv__date{
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0.07em;
+}
+
+.mv__btn{
+    margin-top: 2em;
+}
+
+.mv__speaker-name{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 21px;
+    line-height: 1;
+    color:#FFFFFF;
+}
+
+.mv__speaker-name-small{
+    font-size: 0.8em;
+}
+
+.mv__speaker-name-label{
+    font-size: 14px;
+}
+
+
 }
