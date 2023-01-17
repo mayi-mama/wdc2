@@ -29,6 +29,7 @@ body {
 
 img {
     max-width: 100%;
+    width: 100%;
     height: auto;
     vertical-align: bottom;
 }
@@ -699,20 +700,15 @@ img {
         line-height: 1.6;
     }
 
-    /*ここまで済*/
+    /*session*/
+    .session-table__time{
+         font-size: 16px;
+    }
 
-/*session*/
-.session-table__time{
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.session-table__title{
-    font-size: 22px;
-    font-weight: bold;
-    color: var(--main-color);
-    margin-bottom: 15px;
-}
+    .session-table__title{
+         font-size: 18px;
+         margin-bottom: 10px;
+    }
 
     /*register*/
     .register{
@@ -748,51 +744,29 @@ img {
         min-height: 100%;
     }
 
-/*footer*/
-.footer{
-    display: grid;
-    color:#fff;
-    background-color: #141414;
-    padding: 70px 20px;
-    place-items: center;
-}
+    /*footer*/
+    .footer{
+        padding: 50px 20px;
+    }
 
-.footer__copyright{
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 0.08em;
-}
+    .footer__copyright{
+        font-size: 12px;
+    }
 
-/*pagetop*/
-.page-top{
-    position: fixed;
-    right: 40px;
-    bottom: 45px;
-    z-index: 1;
-}
+    /*pagetop*/
+    .page-top {
+        right: 20px;
+        bottom:20px;
+    }
 
-.page-top__link{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80px;
-    height: 80px;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    transition: opacity 0.3s;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #c41a7f 0%, #664BBF 100%);
-    cursor: pointer;
-}
+    .page-top__link{
+        width:50px;
+        height:50px;
+    }
 
-.page-top__link:hover{
-    opacity: 0.8;
-}
-
-.page-top__icon{
-    font-size: 40px;
-}
+    .page-top__icon{
+        font-size: 25px;
+    }
 
 
 }
