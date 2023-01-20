@@ -215,17 +215,19 @@ img {
     color:#FFFFFF;
 }
 
-.mv__textArea::after{
-    display:block;
-    content:"";
+
+.mv__textArea:after {
     position: absolute;
-    right: 40px;
-    bottom: 20px;
-    width:326px;
-    height: 150px;
+    content: '';
+    top: 205px;
+    left: 285px;
+    display: block;
+    width: 45%;
+    height: 800px;
     translate: rotate(-13deg);
     background-image: url(img/teiji-de-kaerumon.svg);
-    background-color: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .mv__subtitle{
@@ -602,10 +604,10 @@ img {
     }
     
     .mv__textArea::after{
-        right: 10px;
-        bottom: 60px;
-        width: 150px;
-        height: 100px;
+        right: px;
+        bottom: px;
+        width: px;
+        height: px;
     }
 
     .mv__subtitle{
