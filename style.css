@@ -604,10 +604,10 @@ img {
     }
     
     .mv__textArea::after{
-        right: px;
-        bottom: px;
-        width: px;
-        height: px;
+        top: 175px;
+        left: 365px;
+        width: 30%;
+        height: 150px;
     }
 
     .mv__subtitle{
